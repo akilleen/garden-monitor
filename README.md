@@ -10,6 +10,9 @@ These will be using capacative soil sensors atied to an ESP8266. This ESP should
  - ESP8266 flashed with MicroPython
  - Capacative soil sensor
 
+### Wiring
+![Wiring Diagram](Soil-Moisture-Sensor-ESP8266-NodeMCU_Steckplatine.png "ESP8266 Wiring")
+
 ### Software/Libraries
  - MicroPython
  - WifiManager (https://github.com/tzapu/WiFiManager)
