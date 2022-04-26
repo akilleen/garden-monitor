@@ -1,0 +1,21 @@
+# Testing pipeline
+
+name: Testing
+
+on:
+  push:
+    branches: [ main, readability-fixes ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Linting
+        run: pylint --rcfile pylintrc sensor/*.py
