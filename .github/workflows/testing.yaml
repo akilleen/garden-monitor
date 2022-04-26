@@ -17,5 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Linting
+      - name: GitHub Action for pylint
+        uses: cclauss/GitHub-Action-for-pylint@0.7.0
         run: pylint --rcfile pylintrc sensor/*.py
