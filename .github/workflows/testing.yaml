@@ -17,5 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: cclauss/GitHub-Action-for-pylint@0.7.0
-      - run: pylint --rcfile pylintrc sensor/*.py
+      - name: Python Pylin GitHub Action
+        uses: fylein/python-pylint-github-action@v1
+        with:
+          args: pylint --rcfile pylintrc sensor/*.py 
