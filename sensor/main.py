@@ -1,8 +1,8 @@
 from time import sleep
-import network
-import sensor
 import publish
 import packages
+import network
+import sensor
 
 packages.install()
 sta_if = network.WLAN(network.STA_IF)
