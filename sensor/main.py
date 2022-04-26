@@ -1,12 +1,15 @@
 import network
 from time import sleep
 import sensor
+import publish
+import packages
 
+packages.install()
 sta_if = network.WLAN(network.STA_IF)
 
 # Configure WiFi Here
-wifi_ssid = 'PurpleRain' 
-wifi_password = 'm34th00k'
+wifi_ssid = '' 
+wifi_password = ''
 
 sta_if.connect(wifi_ssid, wifi_password)
 if sta_if.active():
@@ -15,5 +18,5 @@ if sta_if.active():
       
 while True:
   soil_moisture_value = sensor.get_reading()
-  print(soil_moisture_value)
-  sleep(2)
+  publish.publish(soil_moisture_value)
+  sleep(10)

@@ -1,5 +1,4 @@
 from machine import ADC
-# from mqtt_async import MQTTClient, config
 
 def get_reading():
     soil_moisture = ADC(0)

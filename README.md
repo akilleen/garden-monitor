@@ -3,6 +3,10 @@
 ## Summary
 This is a garden monitor using various sensors to talk back to a device, probably a raspberry pi. The first sensors will be capacative moisture sensors to tell how wet soil is. The plan is to allow for other sensors such as humidity, soil PH, etc. 
 
+## Tools needed
+  - ampy
+  - esptool
+  
 ## Moisture Sensors
 These will be using capacative soil sensors atied to an ESP8266. This ESP should communicate with the "server" to upload current readings.
 
