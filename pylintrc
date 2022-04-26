@@ -80,7 +80,7 @@ msg-template='{path} {line}: {msg} ({symbol})'
 output-format=text
 
 # Tells whether to display a full report or only the messages
-reports=no
+reports=yes
 
 # Activate the evaluation score.
 score=yes
